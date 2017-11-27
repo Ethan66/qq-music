@@ -1,0 +1,20 @@
+{
+  "name": "qq-music",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethan66/qq-music.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethan66/qq-music/issues"
+  },
+  "homepage": "https://github.com/Ethan66/qq-music#readme"
+}
