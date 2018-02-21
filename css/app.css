@@ -23,6 +23,7 @@
   overflow: hidden; }
   .qq-slider .qq-slider-wrap {
     display: flex;
+    width: 500%;
     transition: .6s; }
   .qq-slider .qq-slider-item {
     flex-basis: 100%; }
