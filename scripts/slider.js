@@ -30,6 +30,7 @@ class Slider{
         if(this.index === this.slides.length){
             this.index = 0
             this.$wrap.style.transform = 'translateX(0)'
+            return
         }
         let x = `-${this.index/this.slides.length*100}%`
         this.$wrap.style.transform = `translateX(${x})`
