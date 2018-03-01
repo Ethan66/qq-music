@@ -39,7 +39,8 @@ var Slider = function () {
             this.index += 1;
             if (this.index === this.slides.length) {
                 this.index = 0;
-                this.$wrap.style.transform = 'translate(';
+                this.$wrap.style.transform = 'translateX(0)';
+                return;
             }
             var x = '-' + this.index / this.slides.length * 100 + '%';
             this.$wrap.style.transform = 'translateX(' + x + ')';
