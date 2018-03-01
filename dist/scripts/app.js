@@ -9,6 +9,7 @@
     function render(json) {
         renderSlider(json.data.slider);
         renderRadios(json.data.radioList);
+        renderPlayLists(json.data.songList);
     }
 
     function renderSlider(slides) {
@@ -24,6 +25,12 @@
     function renderRadios(radios) {
         document.querySelector(".radios .list").innerHTML = radios.map(function (radio) {
             return "<div class=\"list-item\">\n            <a href=\"\">\n                <div class=\"list-media\">\n                    <img src=\"" + radio.picUrl + "\" />\n                    <span class=\"icon icon-play\"></span>\n                </div>\n                <div class=\"info\">\n                    <h3 class=\"title\">" + radio.Ftitle + "</h3>\n                </div>\n            </a>\n        </div>";
+        }).join("");
+    }
+
+    function renderPlayLists(playLists) {
+        document.querySelector(".playLists .songList").innerHTML = playLists.map(function (playList) {
+            return "<div class=\"list-item\">\n            <a href=\"\">\n                <div class=\"list-media\">\n                    <img src=\"" + playList.picUrl + "\" />\n                    <span class=\"icon icon-play\"></span>\n                </div>\n                <div class=\"info\">\n                    <h3 class=\"title\">" + playList.songListDesc + "</h3>\n                </div>\n            </a>\n        </div>";
         }).join("");
     }
 })();

@@ -1,15 +1,12 @@
-.radios{
+.radios,.playLists{
   margin-left: 10px; margin-right: 10px;
   .list-title{
     margin-bottom: 11px; font-weight: normal; font-size: 16px;
   }
-  .list{
-    display: flex;
+  .list,.songList{
+    display: flex; flex-wrap: wrap; margin-right: -8px;
     .list-item{
-      flex-basis: 50%; background: #fff;
-      &:first-child{
-        margin-right: 8px;
-      }
+      flex-basis: 50%; background: #fff; padding-right: 8px;
       .list-media{
         position: relative; margin-bottom: 5px;
         &:before{

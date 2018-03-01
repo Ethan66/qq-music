@@ -7,6 +7,7 @@
     function render(json){
         renderSlider(json.data.slider)
         renderRadios(json.data.radioList)
+        renderPlayLists(json.data.songList)
 
     }
 
@@ -28,6 +29,21 @@
                 </div>
                 <div class="info">
                     <h3 class="title">${radio.Ftitle}</h3>
+                </div>
+            </a>
+        </div>`).join("")
+    }
+
+    function renderPlayLists(playLists){
+        document.querySelector(".playLists .songList").innerHTML = playLists.map(playList =>
+            `<div class="list-item">
+            <a href="">
+                <div class="list-media">
+                    <img src="${playList.picUrl}" />
+                    <span class="icon icon-play"></span>
+                </div>
+                <div class="info">
+                    <h3 class="title">${playList.songListDesc}</h3>
                 </div>
             </a>
         </div>`).join("")
