@@ -6,7 +6,7 @@
   .list,.songList{
     display: flex; flex-wrap: wrap; margin-right: -8px;
     .list-item{
-      flex-basis: 50%; background: #fff; padding-right: 8px;
+      flex-basis: 50%; background: #fff; padding-right: 8px; padding-bottom: 36px; position: relative;
       .list-media{
         position: relative; margin-bottom: 5px;
         &:before{
@@ -22,7 +22,8 @@
       }
       .info{
         .title{
-          height: 36px; font-size: 14px; font-weight: normal; color: #000;
+          width: 100%; height: 36px; font-size: 14px; font-weight: normal; color: #000; position: absolute;
+          white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 8px;
         }
       }
     }

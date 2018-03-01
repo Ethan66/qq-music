@@ -12,7 +12,9 @@
     .radios .list .list-item, .radios .songList .list-item, .playLists .list .list-item, .playLists .songList .list-item {
       flex-basis: 50%;
       background: #fff;
-      padding-right: 8px; }
+      padding-right: 8px;
+      padding-bottom: 36px;
+      position: relative; }
       .radios .list .list-item .list-media, .radios .songList .list-item .list-media, .playLists .list .list-item .list-media, .playLists .songList .list-item .list-media {
         position: relative;
         margin-bottom: 5px; }
@@ -35,10 +37,16 @@
           bottom: 5px;
           right: 5px; }
       .radios .list .list-item .info .title, .radios .songList .list-item .info .title, .playLists .list .list-item .info .title, .playLists .songList .list-item .info .title {
+        width: 100%;
         height: 36px;
         font-size: 14px;
         font-weight: normal;
-        color: #000; }
+        color: #000;
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 8px; }
 
 * {
   margin: 0;
