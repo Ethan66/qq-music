@@ -1,12 +1,15 @@
 (function(){
-    let slider=new Slider({
-        el:document.querySelector("#slider"),
-        slides:[
-            {link:"#1",image:'images/lb1.png'},
-            {link:"#2",image:'images/lb2.jpg'},
-            {link:"#3",image:'images/lb3.jpg'},
-            {link:"#4",image:'images/lb4.jpg'},
-            {link:"#5",image:'images/lb5.jpg'},
-        ]
-    })
+
+    fetch('json/rec.json')
+        .then(res => res.json())
+        .then(render)
+
+    function render(json){
+        console.log(json)
+        let slides = json.data.slider.map(slide => ({link: slide.linkUrl, image: slide.picUrl}))
+        new Slider({
+            el: document.querySelector("#slider"),
+            slides
+        })
+    }
 })()
