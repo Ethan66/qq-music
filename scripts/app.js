@@ -6,6 +6,7 @@
 
     function render(json){
         renderSlider(json.data.slider)
+        renderRadios(json.data.radioList)
 
     }
 
@@ -15,5 +16,20 @@
             el: document.querySelector("#slider"),
             slides
         })
+    }
+
+    function renderRadios(radios){
+        document.querySelector(".radios .list").innerHTML = radios.map(radio =>
+        `<div class="list-item">
+            <a href="">
+                <div class="list-media">
+                    <img src="${radio.picUrl}" />
+                    <span class="icon icon-play"></span>
+                </div>
+                <div class="info">
+                    <h3 class="title">${radio.Ftitle}</h3>
+                </div>
+            </a>
+        </div>`).join("")
     }
 })()

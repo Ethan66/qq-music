@@ -1,3 +1,44 @@
+.radios {
+  margin-left: 10px;
+  margin-right: 10px; }
+  .radios .list-title {
+    margin-bottom: 11px;
+    font-weight: normal;
+    font-size: 16px; }
+  .radios .list {
+    display: flex; }
+    .radios .list .list-item {
+      flex-basis: 50%;
+      background: #fff; }
+      .radios .list .list-item:first-child {
+        margin-right: 8px; }
+      .radios .list .list-item .list-media {
+        position: relative;
+        margin-bottom: 5px; }
+        .radios .list .list-item .list-media:before {
+          content: "";
+          display: block;
+          padding-top: 100%; }
+        .radios .list .list-item .list-media img {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block; }
+        .radios .list .list-item .list-media .icon {
+          width: 24px;
+          height: 24px;
+          background: url("../images/list_sprite.png");
+          background-size: 100%;
+          position: absolute;
+          bottom: 5px;
+          right: 5px; }
+      .radios .list .list-item .info .title {
+        height: 36px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #000; }
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +50,9 @@
 
 ul, li {
   list-style: none; }
+
+a {
+  text-decoration: none; }
 
 #header {
   display: flex;
@@ -23,7 +67,9 @@ ul, li {
 
 .qq-slider {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 14px;
+  font-size: 0; }
   .qq-slider .qq-slider-wrap {
     display: flex;
     width: 500%;

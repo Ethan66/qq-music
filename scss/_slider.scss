@@ -1,6 +1,8 @@
 .qq-slider{
   width: 100%;
   overflow: hidden;
+  margin-bottom: 14px;
+  font-size: 0;
   .qq-slider-wrap{
     display: flex; width: 500%;
     transition: .6s;
