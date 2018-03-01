@@ -15,41 +15,52 @@
     </header>
     <nav class="navbar">
         <ul class="nav-list">
-            <li class="active">推荐</li>
-            <li>排行榜</li>
-            <li>搜索</li>
+            <li class="active" data-rola="tab" data-view="rec-view" >推荐</li>
+            <li data-rola="tab" data-view="rank-view">排行榜</li>
+            <li data-rola="tab" data-view="search-view">搜索</li>
         </ul>
     </nav>
-    <div class="qq-slider" id="slider">
-        <!--<div class="qq-slider-wrap">
-            <div class="qq-slider-item">
-                <a href="#">
-                    <img src="images/lb1.png" />
-                </a>
+    <div class="content">
+        <div class="rec-view">
+            <div class="qq-slider" id="slider">
+                <!--<div class="qq-slider-wrap">
+                    <div class="qq-slider-item">
+                        <a href="#">
+                            <img src="images/lb1.png" />
+                        </a>
+                    </div>
+                    <div class="qq-slider-item">
+                        <a href="#">
+                            <img src="images/lb2.jpg" />
+                        </a>
+                    </div>
+                    <div class="qq-slider-item">
+                        <a href="#">
+                            <img src="images/lb3.jpg" />
+                        </a>
+                    </div>
+                    <div class="qq-slider-item">
+                        <a href="#">
+                            <img src="images/lb4.jpg" />
+                        </a>
+                    </div>
+                    <div class="qq-slider-item">
+                        <a href="#">
+                            <img src="images/lb5.jpg" />
+                        </a>
+                    </div>
+                </div>-->
             </div>
-            <div class="qq-slider-item">
-                <a href="#">
-                    <img src="images/lb2.jpg" />
-                </a>
-            </div>
-            <div class="qq-slider-item">
-                <a href="#">
-                    <img src="images/lb3.jpg" />
-                </a>
-            </div>
-            <div class="qq-slider-item">
-                <a href="#">
-                    <img src="images/lb4.jpg" />
-                </a>
-            </div>
-            <div class="qq-slider-item">
-                <a href="#">
-                    <img src="images/lb5.jpg" />
-                </a>
-            </div>
-        </div>-->
+        </div>
+        <div class="rank-view hide">
+            排行榜
+        </div>
+        <div class="search-view hide">
+            搜索
+        </div>
     </div>
     <script src="dist/scripts/slider.js"></script>
+    <script src="dist/scripts/navbar.js"></script>
     <script src="dist/scripts/app.js"></script>
 </body>
 </html>
