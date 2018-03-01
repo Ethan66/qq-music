@@ -7,8 +7,11 @@
     }).then(render);
 
     function render(json) {
-        console.log(json);
-        var slides = json.data.slider.map(function (slide) {
+        renderSlider(json.data.slider);
+    }
+
+    function renderSlider(slides) {
+        slides = slides.map(function (slide) {
             return { link: slide.linkUrl, image: slide.picUrl };
         });
         new Slider({

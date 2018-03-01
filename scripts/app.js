@@ -5,8 +5,12 @@
         .then(render)
 
     function render(json){
-        console.log(json)
-        let slides = json.data.slider.map(slide => ({link: slide.linkUrl, image: slide.picUrl}))
+        renderSlider(json.data.slider)
+
+    }
+
+    function renderSlider(slides){
+        slides = slides.map(slide => ({link: slide.linkUrl, image: slide.picUrl}))
         new Slider({
             el: document.querySelector("#slider"),
             slides
