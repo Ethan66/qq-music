@@ -1,0 +1,304 @@
+{
+  "code": 0,
+  "subcode": 0,
+  "message": "",
+  "default": 0,
+  "data": {
+    "topList": [
+      {
+        "id": 4,
+        "listenCount": 19200000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_213191472.jpg",
+        "songList": [
+          {
+            "singername": "张杰",
+            "songname": "如歌"
+          },
+          {
+            "singername": "迪丽热巴/毛不易",
+            "songname": "浴火成诗"
+          },
+          {
+            "singername": "华晨宇",
+            "songname": "我管你 (Live)"
+          }
+        ],
+        "topTitle": "安利XS·巅峰榜·流行指数",
+        "type": 0
+      },
+      {
+        "id": 26,
+        "listenCount": 19700000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_213191472.jpg",
+        "songList": [
+          {
+            "singername": "张杰",
+            "songname": "如歌"
+          },
+          {
+            "singername": "于文文",
+            "songname": "体面"
+          },
+          {
+            "singername": "冯提莫",
+            "songname": "佛系少女"
+          }
+        ],
+        "topTitle": "巅峰榜·热歌",
+        "type": 0
+      },
+      {
+        "id": 27,
+        "listenCount": 15500000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_213198549.jpg",
+        "songList": [
+          {
+            "singername": "迪丽热巴/毛不易",
+            "songname": "浴火成诗"
+          },
+          {
+            "singername": "张杰",
+            "songname": "如歌"
+          },
+          {
+            "singername": "汪苏泷",
+            "songname": "摇滚唐人街"
+          }
+        ],
+        "topTitle": "巅峰榜·新歌",
+        "type": 0
+      },
+      {
+        "id": 33,
+        "listenCount": 9500000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_33_300_212892375.jpg",
+        "songList": [
+          {
+            "singername": "张韶涵",
+            "songname": "阿刁 (Live)"
+          },
+          {
+            "singername": "华晨宇",
+            "songname": "我管你 (Live)"
+          },
+          {
+            "singername": "张韶涵",
+            "songname": "追梦人 (Live)"
+          }
+        ],
+        "topTitle": "全军出击·巅峰榜·歌手2018",
+        "type": 0
+      },
+      {
+        "id": 28,
+        "listenCount": 19600000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_28_300_212437019.jpg",
+        "songList": [
+          {
+            "singername": "胡66",
+            "songname": "空空如也"
+          },
+          {
+            "singername": "新乐尘符",
+            "songname": "123我爱你"
+          },
+          {
+            "singername": "精彩强Sir",
+            "songname": "故事与她 (Remix)"
+          }
+        ],
+        "topTitle": "巅峰榜·网络歌曲",
+        "type": 0
+      },
+      {
+        "id": 5,
+        "listenCount": 9800000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_213191472.jpg",
+        "songList": [
+          {
+            "singername": "张杰",
+            "songname": "如歌"
+          },
+          {
+            "singername": "迪丽热巴/毛不易",
+            "songname": "浴火成诗"
+          },
+          {
+            "singername": "冯提莫",
+            "songname": "佛系少女"
+          }
+        ],
+        "topTitle": "巅峰榜·内地",
+        "type": 0
+      },
+      {
+        "id": 6,
+        "listenCount": 4241920,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_212877900.jpg",
+        "songList": [
+          {
+            "singername": "周杰伦",
+            "songname": "等你下课(with 杨瑞代)"
+          },
+          {
+            "singername": "高世章",
+            "songname": "胡巴"
+          },
+          {
+            "singername": "张韶涵",
+            "songname": "没离开过"
+          }
+        ],
+        "topTitle": "巅峰榜·港台",
+        "type": 0
+      },
+      {
+        "id": 3,
+        "listenCount": 10242190,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_3_300_213193391.jpg",
+        "songList": [
+          {
+            "singername": "David Guetta/Martin Garrix/Brooks",
+            "songname": "Like I Do"
+          },
+          {
+            "singername": "Calum Scott/Leona Lewis",
+            "songname": "You Are The Reason (Duet Version)"
+          },
+          {
+            "singername": "The Chainsmokers",
+            "songname": "You Owe Me"
+          }
+        ],
+        "topTitle": "巅峰榜·欧美",
+        "type": 0
+      },
+      {
+        "id": 16,
+        "listenCount": 7829280,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_16_300_213036901.jpg",
+        "songList": [
+          {
+            "singername": "세븐틴 (SEVENTEEN)",
+            "songname": "Thinkin' about you"
+          },
+          {
+            "singername": "iKON (아이콘)",
+            "songname": "LOVE SCENARIO (사랑을 했다)"
+          },
+          {
+            "singername": "김성규 (金圣圭)/PUNCHNELLO (펀치넬로)",
+            "songname": "뭐랬어 (说了什么)"
+          }
+        ],
+        "topTitle": "巅峰榜·韩国",
+        "type": 0
+      },
+      {
+        "id": 29,
+        "listenCount": 3226600,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_29_300_213191472.jpg",
+        "songList": [
+          {
+            "singername": "张杰",
+            "songname": "如歌"
+          },
+          {
+            "singername": "迪丽热巴/毛不易",
+            "songname": "浴火成诗"
+          },
+          {
+            "singername": "李玉刚",
+            "songname": "独孤天下"
+          }
+        ],
+        "topTitle": "巅峰榜·影视金曲",
+        "type": 0
+      },
+      {
+        "id": 17,
+        "listenCount": 1980000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_17_300_212658392.jpg",
+        "songList": [
+          {
+            "singername": "GARNiDELiA (ガルニデリア)",
+            "songname": "Error"
+          },
+          {
+            "singername": "初音ミク (初音未来)",
+            "songname": "初梦"
+          },
+          {
+            "singername": "初音ミク (初音未来)",
+            "songname": "Shining Star"
+          }
+        ],
+        "topTitle": "巅峰榜·日本",
+        "type": 0
+      },
+      {
+        "id": 201,
+        "listenCount": 398620,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/20150127163830.jpg",
+        "songList": [
+          {
+            "singername": "迪丽热巴",
+            "songname": "浴火成诗"
+          },
+          {
+            "singername": "毛不易",
+            "songname": "不染"
+          },
+          {
+            "singername": "周杰伦",
+            "songname": "等你下课(with 杨瑞代)官方导演版MV"
+          }
+        ],
+        "topTitle": "巅峰榜·MV",
+        "type": 0
+      },
+      {
+        "id": 52,
+        "listenCount": 1910000,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_52_300_212374942.jpg",
+        "songList": [
+          {
+            "singername": "徐秉龙",
+            "songname": "千禧"
+          },
+          {
+            "singername": "Chris Garneau",
+            "songname": "Tower"
+          },
+          {
+            "singername": "银临",
+            "songname": "大美江湖"
+          }
+        ],
+        "topTitle": "巅峰榜·腾讯音乐人原创榜",
+        "type": 0
+      },
+      {
+        "id": 36,
+        "listenCount": 3157040,
+        "picUrl": "http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_36_300_201816159.jpg",
+        "songList": [
+          {
+            "singername": "郑阳亭",
+            "songname": "你那么爱他"
+          },
+          {
+            "singername": "胡赟兆",
+            "songname": "啷个哩个啷"
+          },
+          {
+            "singername": "胡慧",
+            "songname": "分手快乐"
+          }
+        ],
+        "topTitle": "巅峰榜·K歌金曲",
+        "type": 0
+      }
+    ]
+  }
+}

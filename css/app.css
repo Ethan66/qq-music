@@ -113,6 +113,51 @@ a {
 .hide {
   display: none; }
 
+.rank-view .list {
+  margin: 10px; }
+  .rank-view .list .list-item {
+    background: #fff;
+    margin-bottom: 10px;
+    display: flex; }
+    .rank-view .list .list-item .img a {
+      display: block;
+      position: relative;
+      width: 100px;
+      height: 100px; }
+    .rank-view .list .list-item .img img {
+      display: block;
+      width: 100px;
+      height: 100px; }
+    .rank-view .list .list-item .text {
+      line-height: 22px;
+      padding: 5px 10px 5px 15px;
+      font-size: 14px;
+      overflow: hidden;
+      flex: 1;
+      position: relative; }
+      .rank-view .list .list-item .text h3 {
+        font-weight: normal;
+        font-size: 16px;
+        margin-bottom: 5px; }
+      .rank-view .list .list-item .text p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: rgba(0, 0, 0, 0.5); }
+        .rank-view .list .list-item .text p span {
+          color: #000; }
+      .rank-view .list .list-item .text .arrow {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #bbb;
+          border-left: 0;
+          border-top: 0;
+        transform: rotate(-45deg);
+        position: absolute;
+        right: 10px;
+        top: 50%; }
+
 body {
   background: #f4f4f4; }
 
