@@ -1,18 +1,37 @@
 function lazyload(images){
     let imgs = [].slice.call(images)
 
-    window.addEventListener("scroll",scrollEvent)
-
-    function scrollEvent() {
-        if(!imgs.length) {
-            return window.removeEventListener("scroll",scrollEvent)
-        }
-        imgs = imgs.filter(img => img.classList.contains("lazyload"))
-        imgs.forEach(img => {
-            if(inViewport(img)) {
-                loadImage(img)
+    let scrollEvent = throttle(function() {
+        console.log(new Date())
+            if(!imgs.length) {
+                return window.removeEventListener("scroll",scrollEvent)
             }
-        })
+            imgs = imgs.filter(img => img.classList.contains("lazyload"))
+            imgs.forEach(img => {
+                if(inViewport(img)) {
+                    loadImage(img)
+                }
+            })
+        },500)
+
+    window.addEventListener("scroll",scrollEvent)
+    window.dispatchEvent(new Event('scroll'))
+}
+
+
+
+function throttle(fn,time){
+    let prev, timer
+    return function func(){
+        let cur = new Date()
+        let diff = cur - prev
+        if(!prev || diff >= time) {
+            fn()
+            prev = cur
+        } else if(diff <= time){
+            clearTimeout(timer)
+            timer = setTimeout(func, diff - time)
+        }
     }
 }
 

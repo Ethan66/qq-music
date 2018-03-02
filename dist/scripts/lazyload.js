@@ -3,9 +3,8 @@
 function lazyload(images) {
     var imgs = [].slice.call(images);
 
-    window.addEventListener("scroll", scrollEvent);
-
-    function scrollEvent() {
+    var scrollEvent = throttle(function () {
+        console.log(new Date());
         if (!imgs.length) {
             return window.removeEventListener("scroll", scrollEvent);
         }
@@ -17,7 +16,26 @@ function lazyload(images) {
                 loadImage(img);
             }
         });
-    }
+    }, 500);
+
+    window.addEventListener("scroll", scrollEvent);
+    window.dispatchEvent(new Event('scroll'));
+}
+
+function throttle(fn, time) {
+    var prev = void 0,
+        timer = void 0;
+    return function func() {
+        var cur = new Date();
+        var diff = cur - prev;
+        if (!prev || diff >= time) {
+            fn();
+            prev = cur;
+        } else if (diff <= time) {
+            clearTimeout(timer);
+            timer = setTimeout(func, diff - time);
+        }
+    };
 }
 
 function inViewport(img) {
