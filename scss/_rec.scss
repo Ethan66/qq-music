@@ -8,7 +8,7 @@
     .list-item{
       flex-basis: 50%; background: #fff; padding-right: 8px; padding-bottom: 36px; position: relative;
       .list-media{
-        position: relative; margin-bottom: 5px;
+        position: relative; margin-bottom: 5px; border: 1px solid #bbb;
         &:before{
           content: ""; display: block; padding-top: 100%;
         }

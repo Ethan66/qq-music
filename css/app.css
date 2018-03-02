@@ -17,7 +17,8 @@
       position: relative; }
       .radios .list .list-item .list-media, .radios .songList .list-item .list-media, .playLists .list .list-item .list-media, .playLists .songList .list-item .list-media {
         position: relative;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        border: 1px solid #bbb; }
         .radios .list .list-item .list-media:before, .radios .songList .list-item .list-media:before, .playLists .list .list-item .list-media:before, .playLists .songList .list-item .list-media:before {
           content: "";
           display: block;

@@ -16,6 +16,8 @@
 
     function renderRank(json){
         renderRankLists(json.data.topList)
+        lazyload(document.querySelectorAll(".lazyload"))
+
     }
 
     function renderSlider(slides){
@@ -31,7 +33,7 @@
         `<div class="list-item">
             <a href="">
                 <div class="list-media">
-                    <img src="${radio.picUrl}" />
+                    <img class="lazyload" data-src="${radio.picUrl}" src="${radio.picUrl}" />
                     <span class="icon icon-play"></span>
                 </div>
                 <div class="info">
@@ -46,7 +48,7 @@
             `<div class="list-item">
             <a href="">
                 <div class="list-media">
-                    <img src="${playList.picUrl}" />
+                    <img class="lazyload" data-src="${playList.picUrl}" src="${playList.picUrl}" />
                     <span class="icon icon-play"></span>
                 </div>
                 <div class="info">
@@ -69,7 +71,7 @@
             return `<li class="list-item">
                 <div class="img">
                     <a href="">
-                        <img src="${topList.picUrl}" />
+                        <img class="lazyload" data-src="${topList.picUrl}" />
                         <span class="listen-count">
                             <i class="icon"></i>
                             <span class="num">${num}</span>

@@ -3,6 +3,7 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/scripts/app.js" />
+        <item url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/slider.js" />
       </sourceFilesUrls>
@@ -10,6 +11,7 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/scripts/test.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/app.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/slider.js" />
     </CLASSES>
