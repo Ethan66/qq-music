@@ -57,11 +57,23 @@
     }
 
     function renderRankLists(topLists){
-        document.querySelector(".rank-view .list").innerHTML = topLists.map(topList =>
-            `<li class="list-item">
+        document.querySelector(".rank-view .list").innerHTML = topLists.map(topList => {
+            let num,countNum = topList.listenCount
+            if(countNum / 10000 > 1){
+                let integer = parseInt(countNum / 10000)
+                let decimal = parseInt(countNum % 10000 / 1000)
+                num = integer + '.' + decimal + '万'
+            } else{
+
+            }
+            return `<li class="list-item">
                 <div class="img">
                     <a href="">
                         <img src="${topList.picUrl}" />
+                        <span class="listen-count">
+                            <i class="icon"></i>
+                            <span class="num">${num}</span>
+                        </span>
                     </a>
                 </div>
                 <div class="text">
@@ -71,6 +83,8 @@
                     <p>3 <span>${topList.songList[2].songname}</span> - ${topList.songList[2].singername}</p>
                     <i class="arrow"></i>
                 </div>
-            </li>`).join("")
+            </li>`
+            }
+            ).join("")
     }
 })()

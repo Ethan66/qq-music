@@ -123,11 +123,27 @@ a {
       display: block;
       position: relative;
       width: 100px;
-      height: 100px; }
+      height: 100px;
+      color: #fff; }
     .rank-view .list .list-item .img img {
       display: block;
       width: 100px;
       height: 100px; }
+    .rank-view .list .list-item .img .listen-count {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      font-size: 12px; }
+      .rank-view .list .list-item .img .listen-count .icon {
+        float: left;
+        width: 10px;
+        height: 10px;
+        background: url("../images/list_sprite.png") no-repeat;
+        background-size: 24px 60px;
+        background-position: 0 -50px;
+        margin-top: 3px; }
+      .rank-view .list .list-item .img .listen-count .num {
+        margin-left: 2px; }
     .rank-view .list .list-item .text {
       line-height: 22px;
       padding: 5px 10px 5px 15px;

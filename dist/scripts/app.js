@@ -44,7 +44,14 @@
 
     function renderRankLists(topLists) {
         document.querySelector(".rank-view .list").innerHTML = topLists.map(function (topList) {
-            return '<li class="list-item">\n                <div class="img">\n                    <a href="">\n                        <img src="' + topList.picUrl + '" />\n                    </a>\n                </div>\n                <div class="text">\n                    <h3>' + topList.topTitle + '</h3>\n                    <p>1 <span>' + topList.songList[0].songname + '</span> - ' + topList.songList[0].singername + '</p>\n                    <p>2 <span>' + topList.songList[1].songname + '</span> - ' + topList.songList[1].singername + '</p>\n                    <p>3 <span>' + topList.songList[2].songname + '</span> - ' + topList.songList[2].singername + '</p>\n                    <i class="arrow"></i>\n                </div>\n            </li>';
+            var num = void 0,
+                countNum = topList.listenCount;
+            if (countNum / 10000 > 1) {
+                var integer = parseInt(countNum / 10000);
+                var decimal = parseInt(countNum % 10000 / 1000);
+                num = integer + '.' + decimal + '万';
+            } else {}
+            return '<li class="list-item">\n                <div class="img">\n                    <a href="">\n                        <img src="' + topList.picUrl + '" />\n                        <span class="listen-count">\n                            <i class="icon"></i>\n                            <span class="num">' + num + '</span>\n                        </span>\n                    </a>\n                </div>\n                <div class="text">\n                    <h3>' + topList.topTitle + '</h3>\n                    <p>1 <span>' + topList.songList[0].songname + '</span> - ' + topList.songList[0].singername + '</p>\n                    <p>2 <span>' + topList.songList[1].songname + '</span> - ' + topList.songList[1].singername + '</p>\n                    <p>3 <span>' + topList.songList[2].songname + '</span> - ' + topList.songList[2].singername + '</p>\n                    <i class="arrow"></i>\n                </div>\n            </li>';
         }).join("");
     }
 })();
