@@ -183,22 +183,74 @@ a {
   .search-view .search-wrap {
     padding: 10px;
     background: #f4f4f4; }
-    .search-view .search-wrap form {
+    .search-view .search-wrap .search-input {
       background: #fff;
       display: flex;
       align-items: center;
       padding: 5px 10px; }
-      .search-view .search-wrap form .icon {
+      .search-view .search-wrap .search-input .icon {
         display: block;
         width: 20px;
         height: 20px;
         background: url("../images/search.png") no-repeat;
         background-size: cover; }
-      .search-view .search-wrap form .search {
+      .search-view .search-wrap .search-input .search {
         outline: 0;
         border: 0;
         line-height: 26px;
-        padding-left: 10px; }
+        padding-left: 10px;
+        width: 100%; }
+  .search-view .search-content {
+    background: #fff;
+    border-top: 1px solid #ddd; }
+    .search-view .search-content .singer {
+      display: flex;
+      border-bottom: 1px solid #ddd; }
+      .search-view .search-content .singer .img {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .search-view .search-content .singer .img img {
+          display: block;
+          width: 40px;
+          height: 40px;
+          margin: 8px;
+          border-radius: 50%; }
+      .search-view .search-content .singer .text h4 {
+        font-weight: normal;
+        font-size: 16px;
+        margin: 6px 0 4px; }
+      .search-view .search-content .singer .text p {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6); }
+        .search-view .search-content .singer .text p i {
+          font-style: normal; }
+    .search-view .search-content ul {
+      display: block; }
+      .search-view .search-content ul li {
+        display: flex;
+        border-bottom: 1px solid #ddd; }
+        .search-view .search-content ul li .img {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 8px; }
+          .search-view .search-content ul li .img .icon {
+            display: block;
+            width: 22px;
+            height: 20px;
+            background: url("../images/search_sprite.png") no-repeat;
+            background-size: 22px 30px;
+            background-position: 0 0; }
+        .search-view .search-content ul li .text h4 {
+          font-weight: normal;
+          font-size: 16px;
+          margin: 6px 0 4px; }
+        .search-view .search-content ul li .text p {
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.6); }
   .search-view .hot-key {
     padding: 10px; }
     .search-view .hot-key h3 {

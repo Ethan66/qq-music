@@ -26,6 +26,8 @@
         })
     }
 
+    let search = new Search(document.querySelector(".search-view"))
+
     function renderRadios(radios){
         document.querySelector(".radios .list").innerHTML = radios.map(radio =>
         `<div class="list-item">

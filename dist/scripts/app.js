@@ -30,6 +30,8 @@
         });
     }
 
+    var search = new Search(document.querySelector(".search-view"));
+
     function renderRadios(radios) {
         document.querySelector(".radios .list").innerHTML = radios.map(function (radio) {
             return '<div class="list-item">\n            <a href="">\n                <div class="list-media">\n                    <img class="lazyload" data-src="' + radio.picUrl + '" src="' + radio.picUrl + '" />\n                    <span class="icon icon-play"></span>\n                </div>\n                <div class="info">\n                    <h3 class="title">' + radio.Ftitle + '</h3>\n                </div>\n            </a>\n        </div>';
