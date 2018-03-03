@@ -91,25 +91,27 @@ a {
       .qq-slider .qq-slider-item > a img {
         width: 100%; }
 
-.navbar .nav-list {
-  display: flex;
-  height: 40px;
-  align-items: center; }
-  .navbar .nav-list li {
-    flex: 1;
-    text-align: center;
+.navbar {
+  background: #fff; }
+  .navbar .nav-list {
+    display: flex;
     height: 40px;
-    line-height: 40px;
-    position: relative; }
-    .navbar .nav-list li.active {
-      color: #31c27c; }
-      .navbar .nav-list li.active:after {
-        display: block;
-        content: '';
-        width: 100%;
-        border-top: 2px solid #31c27c;
-        position: absolute;
-        bottom: 0; }
+    align-items: center; }
+    .navbar .nav-list li {
+      flex: 1;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      position: relative; }
+      .navbar .nav-list li.active {
+        color: #31c27c; }
+        .navbar .nav-list li.active:after {
+          display: block;
+          content: '';
+          width: 100%;
+          border-top: 2px solid #31c27c;
+          position: absolute;
+          bottom: 0; }
 
 .hide {
   display: none; }
@@ -174,6 +176,51 @@ a {
         position: absolute;
         right: 10px;
         top: 50%; }
+
+.search-view {
+  background: #fff;
+  height: 100vh; }
+  .search-view .search-wrap {
+    padding: 10px;
+    background: #f4f4f4; }
+    .search-view .search-wrap form {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      padding: 5px 10px; }
+      .search-view .search-wrap form .icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../images/search.png") no-repeat;
+        background-size: cover; }
+      .search-view .search-wrap form .search {
+        outline: 0;
+        border: 0;
+        line-height: 26px;
+        padding-left: 10px; }
+  .search-view .hot-key {
+    padding: 10px; }
+    .search-view .hot-key h3 {
+      font-size: 14px;
+      margin: 5px 0;
+      color: rgba(0, 0, 0, 0.6); }
+    .search-view .hot-key .result-tag {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px; }
+      .search-view .hot-key .result-tag a {
+        font-size: 14px;
+        color: #000;
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        padding: 6px 8px;
+        border-radius: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+        .search-view .hot-key .result-tag a.tag-hot {
+          color: #fc4524;
+          border-color: #fc4524; }
 
 body {
   background: #f4f4f4; }
