@@ -15,6 +15,9 @@ document.addEventListener("click", function (event) {
             child.style.display = "none";
         });
         content.style.display = "block";
+        if (content.classList.contains("rank-view")) {
+            lazyload(document.querySelectorAll(".lazyload"));
+        }
     }
 });
 //# sourceMappingURL=navbar.js.map

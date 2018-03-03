@@ -16,8 +16,6 @@
 
     function renderRank(json){
         renderRankLists(json.data.topList)
-        lazyload(document.querySelectorAll(".lazyload"))
-
     }
 
     function renderSlider(slides){
