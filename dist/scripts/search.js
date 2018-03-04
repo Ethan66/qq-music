@@ -15,11 +15,23 @@ var Search = function () {
         this.$input.addEventListener("keyup", this.onKeyUp.bind(this));
         this.keyword = '';
         this.page = 1;
+        this.nomore = false;
         this.songs = [];
         this.perpage = 20;
+        this.fetching = false;
+        window.addEventListener("scroll", this.onScroll.bind(this));
     }
 
     _createClass(Search, [{
+        key: "onScroll",
+        value: function onScroll() {
+            if (!this.keyword) return;
+            if (this.nomore) return window.removeEventListener("scroll", this.onScroll.bind(this));
+            if (document.documentElement.clientHeight + pageYOffset > document.body.scrollHeight - 50) {
+                this.search(this.keyword, this.page + 1);
+            }
+        }
+    }, {
         key: "onKeyUp",
         value: function onKeyUp(event) {
             var keyword = event.target.value.trim();
@@ -34,16 +46,22 @@ var Search = function () {
         }
     }, {
         key: "search",
-        value: function search(keyword) {
+        value: function search(keyword, page) {
             var _this = this;
 
             this.keyword = keyword;
-            fetch("http://localhost:4000/search?keyword=" + this.keyword + "&page=" + this.page).then(function (res) {
+            if (this.fetching) return;
+            this.fetching = true;
+            fetch("http://localhost:4000/search?keyword=" + this.keyword + "&page=" + (page || this.page)).then(function (res) {
                 return res.json();
             }).then(function (json) {
+                _this.page = json.data.song.curpage;
+                _this.nomore = json.message == "no results";
                 return json.data.song.list;
             }).then(function (songs) {
                 return _this.append(songs);
+            }).then(function () {
+                return _this.fetching = false;
             });
         }
     }, {
@@ -74,7 +92,7 @@ var Search = function () {
                     return singer.name;
                 }).join("/") + "</p>\n                </div>\n            </li>";
             }).join("");
-            this.$songs.innerHTML = html;
+            this.$songs.innerHTML += html;
         }
     }]);
 
