@@ -23,6 +23,7 @@ var Search = function () {
         value: function onKeyUp(event) {
             var keyword = event.target.value.trim();
             console.log(keyword);
+            if (keyword == '') return this.$songs.innerHTML = "";
             if (event.key !== "Enter") return;
             this.search(keyword);
         }

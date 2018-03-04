@@ -13,6 +13,7 @@ class Search{
     onKeyUp(event){
         let keyword = event.target.value.trim()
         console.log(keyword)
+        if(keyword == '') return this.$songs.innerHTML = ""
         if(event.key !== "Enter") return
         this.search(keyword)
     }
