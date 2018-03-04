@@ -36,13 +36,20 @@ var Search = function () {
         value: function onKeyUp(event) {
             var keyword = event.target.value.trim();
             console.log(keyword);
-            if (keyword == '') {
-                this.$songs.innerHTML = "";
-                this.$singer.innerHTML = '';
-            }
+            if (keyword == '') this.reset();
             if (event.key !== "Enter") return;
             this.searchSinger(keyword);
             this.search(keyword);
+        }
+    }, {
+        key: "reset",
+        value: function reset() {
+            this.page = 1;
+            this.songs = [];
+            this.keyword = '';
+            this.nomore = false;
+            this.$songs.innerHTML = "";
+            this.$singer.innerHTML = '';
         }
     }, {
         key: "search",
@@ -80,7 +87,7 @@ var Search = function () {
     }, {
         key: "appendSinger",
         value: function appendSinger(zhida) {
-            var singerHtml = "\n        <div class=\"img\">\n                        <img src=\"https://y.gtimg.cn/music/photo_new/T001R68x68M000000aHmbL2aPXWH.jpg?max_age=2592000\" />\n                    </div>\n                    <div class=\"text\">\n                        <h4>" + zhida.singername + "</h4>\n                        <p>\u5355\u66F2: <span>" + zhida.songnum + "</span> \u4E13\u8F91: <i>" + zhida.albumnum + "</i></p>\n                    </div>";
+            var singerHtml = "\n        <div class=\"img\">\n                        <img src=\"https://y.gtimg.cn/music/photo_new/T001R68x68M000" + zhida.singermid + ".jpg?max_age=2592000\" />\n                    </div>\n                    <div class=\"text\">\n                        <h4>" + zhida.singername + "</h4>\n                        <p>\u5355\u66F2: <span>" + zhida.songnum + "</span> \u4E13\u8F91: <i>" + zhida.albumnum + "</i></p>\n                    </div>";
 
             this.$singer.innerHTML = singerHtml;
         }

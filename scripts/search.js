@@ -25,13 +25,19 @@ class Search{
     onKeyUp(event){
         let keyword = event.target.value.trim()
         console.log(keyword)
-        if(keyword == '') {
-            this.$songs.innerHTML = ""
-            this.$singer.innerHTML = ''
-        }
+        if(keyword == '') this.reset()
         if(event.key !== "Enter") return
         this.searchSinger(keyword)
         this.search(keyword)
+    }
+
+    reset(){
+        this.page = 1
+        this.songs = []
+        this.keyword = ''
+        this.nomore = false
+        this.$songs.innerHTML = ""
+        this.$singer.innerHTML = ''
     }
 
     search(keyword, page){
@@ -59,7 +65,7 @@ class Search{
     appendSinger(zhida){
         let singerHtml = `
         <div class="img">
-                        <img src="https://y.gtimg.cn/music/photo_new/T001R68x68M000000aHmbL2aPXWH.jpg?max_age=2592000" />
+                        <img src="https://y.gtimg.cn/music/photo_new/T001R68x68M000${zhida.singermid}.jpg?max_age=2592000" />
                     </div>
                     <div class="text">
                         <h4>${zhida.singername}</h4>
