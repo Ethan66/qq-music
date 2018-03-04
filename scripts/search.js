@@ -51,7 +51,7 @@ class Search{
         this.$singer.innerHTML = singerHtml
     }
 
-    append(songs, singer){
+    append(songs){
         let html = songs.map(song =>`<li>
                 <div class="img">
                     <i class="icon"></i>

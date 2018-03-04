@@ -68,7 +68,7 @@ var Search = function () {
         }
     }, {
         key: "append",
-        value: function append(songs, singer) {
+        value: function append(songs) {
             var html = songs.map(function (song) {
                 return "<li>\n                <div class=\"img\">\n                    <i class=\"icon\"></i>\n                </div>\n                <div class=\"text\">\n                    <h4>" + song.songname + "</h4>\n                    <p>" + song.singer.map(function (singer) {
                     return singer.name;
