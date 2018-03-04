@@ -10,6 +10,7 @@ var Search = function () {
 
         this.$el = el;
         this.$input = this.$el.querySelector(".search");
+        this.$songs = this.$el.querySelector(".search-content ul");
         this.$input.addEventListener("keyup", this.onKeyUp.bind(this));
         this.keyword = '';
         this.page = 1;
@@ -27,7 +28,28 @@ var Search = function () {
         }
     }, {
         key: "search",
-        value: function search(keyword) {}
+        value: function search(keyword) {
+            var _this = this;
+
+            this.keyword = keyword;
+            fetch("http://localhost:4000/search?keyword=" + this.keyword + "&page=" + this.page).then(function (res) {
+                return res.json();
+            }).then(function (json) {
+                return json.data.song.list;
+            }).then(function (songs) {
+                return _this.append(songs);
+            });
+        }
+    }, {
+        key: "append",
+        value: function append(songs) {
+            var html = songs.map(function (song) {
+                return "<li>\n                <div class=\"img\">\n                    <i class=\"icon\"></i>\n                </div>\n                <div class=\"text\">\n                    <h4>" + song.songname + "</h4>\n                    <p>" + song.singer.map(function (singer) {
+                    return singer.name;
+                }).join("/") + "</p>\n                </div>\n            </li>";
+            }).join("");
+            this.$songs.innerHTML = html;
+        }
     }]);
 
     return Search;

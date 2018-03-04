@@ -2,6 +2,7 @@
 
 var express = require("express");
 var request = require("request-promise");
+var cors = require("cors");
 var app = express();
 
 var HEADERS = {
@@ -10,6 +11,8 @@ var HEADERS = {
     "referer": "https://m.y.qq.com/",
     "user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
 };
+
+app.use(cors());
 
 app.get('/', async function (req, res) {
     var url = "https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?g_tk=840115334&uin=425734130&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=" + +new Date();
