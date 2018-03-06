@@ -56,5 +56,11 @@
             return '<li class="list-item">\n                <div class="img">\n                    <a href="">\n                        <img class="lazyload" data-src="' + topList.picUrl + '" />\n                        <span class="listen-count">\n                            <i class="icon"></i>\n                            <span class="num">' + num + '</span>\n                        </span>\n                    </a>\n                </div>\n                <div class="text">\n                    <h3>' + topList.topTitle + '</h3>\n                    <p>1 <span>' + topList.songList[0].songname + '</span> - ' + topList.songList[0].singername + '</p>\n                    <p>2 <span>' + topList.songList[1].songname + '</span> - ' + topList.songList[1].singername + '</p>\n                    <p>3 <span>' + topList.songList[2].songname + '</span> - ' + topList.songList[2].singername + '</p>\n                    <i class="arrow"></i>\n                </div>\n            </li>';
         }).join("");
     }
+
+    document.querySelector(".playerEnter").addEventListener("click", function (event) {
+        var target = event.target;
+        document.querySelector(".content").classList.add("hide");
+        document.querySelector(".player-container").classList.remove("hide");
+    });
 })();
 //# sourceMappingURL=app.js.map

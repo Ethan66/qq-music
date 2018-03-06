@@ -68,12 +68,22 @@ a {
   display: flex;
   align-items: center;
   height: 44px;
-  background: #31c27c; }
+  background: #31c27c;
+  position: relative; }
   #header h1 {
     display: none; }
   #header #logo {
     height: 25px;
     margin-left: 10px; }
+  #header .playerEnter {
+    padding: 5px 10px;
+    background: #149c5a;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 10px; }
 
 .qq-slider {
   width: 100%;
@@ -114,7 +124,7 @@ a {
           bottom: 0; }
 
 .hide {
-  display: none; }
+  display: none !important; }
 
 .rank-view .list {
   margin: 10px; }
@@ -273,6 +283,119 @@ a {
         .search-view .hot-key .result-tag a.tag-hot {
           color: #fc4524;
           border-color: #fc4524; }
+
+.player-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #fff; }
+  .player-container .player-header {
+    display: flex;
+    padding: 20px;
+    position: relative; }
+    .player-container .player-header .img {
+      height: 100%; }
+      .player-container .player-header .img img {
+        display: block;
+        width: 80px;
+        height: 80px; }
+    .player-container .player-header .text {
+      margin-left: 10px; }
+      .player-container .player-header .text h4 {
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 5px; }
+    .player-container .player-header .icon {
+      width: 45px;
+      height: 45px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      position: absolute;
+      right: 30px;
+      top: 30px; }
+      .player-container .player-header .icon:after {
+        display: block;
+        content: '';
+        border: 10px solid transparent;
+        border-left: 16px solid rgba(255, 255, 255, 0.6);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        margin-left: -5px; }
+  .player-container .player-lyrics {
+    text-align: center;
+    line-height: 42px;
+    flex: 1;
+    overflow: hidden;
+    color: #808080; }
+  .player-container .player-footer {
+    height: 154px;
+    position: relative;
+    padding-top: 40px; }
+    .player-container .player-footer .like {
+      width: 25px;
+      height: 21px;
+      background: url("../images/sprite_play.png") no-repeat;
+      position: absolute;
+      right: 23px;
+      top: -10px;
+      background-size: 40px 350px;
+      background-position: 0 0; }
+    .player-container .player-footer .progress {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      padding: 0 10px;
+      color: #808080; }
+      .player-container .player-footer .progress .progress-time {
+        padding: 0 10px; }
+      .player-container .player-footer .progress .progress-bar {
+        flex: 1;
+        background: #808080;
+        height: 2px;
+        overflow: hidden; }
+        .player-container .player-footer .progress .progress-bar .bar {
+          width: 100%;
+          height: 100%;
+          background: #31c27c;
+          transform: translateX(-100%); }
+    .player-container .player-footer .action {
+      margin: 20px 50px 0;
+      background: #31c27c;
+      border-radius: 30px; }
+      .player-container .player-footer .action a {
+        display: block;
+        color: #fff;
+        line-height: 44px;
+        font-size: 20px;
+        text-align: center;
+        position: relative; }
+        .player-container .player-footer .action a:before {
+          display: block;
+          width: 33px;
+          height: 33px;
+          content: "";
+          background: url("../images/sprite_play.png") no-repeat;
+          background-position: 0 -242px;
+          background-size: cover;
+          position: absolute;
+          left: 7px;
+          top: 3px; }
+  .player-container .background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: -1; }
 
 body {
   background: #f4f4f4; }

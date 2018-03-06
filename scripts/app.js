@@ -89,4 +89,11 @@
             }
             ).join("")
     }
+
+    document.querySelector(".playerEnter").addEventListener("click", (event) => {
+        let target = event.target
+        document.querySelector(".content").classList.add("hide")
+        document.querySelector(".player-container").classList.remove("hide")
+    })
+
 })()
