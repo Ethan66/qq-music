@@ -21,7 +21,7 @@ class ProgressBar{
     }
     
     start(){
-        this.intervalId = setInterval(this.update.bind(this), 1000)
+        this.intervalId = setInterval(this.update.bind(this), 50)
     }
 
     pause(){
@@ -29,10 +29,10 @@ class ProgressBar{
     }
 
     update(){
-        this.elapsed += 1
+        this.elapsed += 0.05
         this.$progressBar.style.transform = `translateX(${this.elapsed / this.duration * 100 -100}%)`
         this.$elapsed.innerText = this.formatTime(this.elapsed)
-        if(this.elapsed === this.duration) this.pause()
+        if(this.elapsed > this.duration) this.reset()
     }
 
     reset(duration){

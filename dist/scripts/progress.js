@@ -29,7 +29,7 @@ var ProgressBar = function () {
     }, {
         key: "start",
         value: function start() {
-            this.intervalId = setInterval(this.update.bind(this), 1000);
+            this.intervalId = setInterval(this.update.bind(this), 50);
         }
     }, {
         key: "pause",
@@ -39,10 +39,10 @@ var ProgressBar = function () {
     }, {
         key: "update",
         value: function update() {
-            this.elapsed += 1;
+            this.elapsed += 0.05;
             this.$progressBar.style.transform = "translateX(" + (this.elapsed / this.duration * 100 - 100) + "%)";
             this.$elapsed.innerText = this.formatTime(this.elapsed);
-            if (this.elapsed === this.duration) this.pause();
+            if (this.elapsed > this.duration) this.reset();
         }
     }, {
         key: "reset",
