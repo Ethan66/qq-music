@@ -46,7 +46,7 @@ class ProgressBar{
 
     formatTime(time){
         let min = parseInt(time / 60)
-        let second = time % 60
+        let second = parseInt(time) % 60
         if(min < 10) min = '0' + min
         if(second < 10) second = '0' + second
         return `${min}:${second}`

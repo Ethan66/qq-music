@@ -2,6 +2,7 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/dist/scripts/LyricsPlayer.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/app.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/music_player.js" />
@@ -16,6 +17,7 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/scripts/test.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/LyricsPlayer.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/app.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/music_player.js" />

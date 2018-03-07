@@ -342,6 +342,8 @@ a {
     flex: 1;
     overflow: hidden;
     color: #808080; }
+    .player-container .player-lyrics .active {
+      color: #31c27c; }
   .player-container .player-footer {
     height: 154px;
     position: relative;

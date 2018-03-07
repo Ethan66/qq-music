@@ -58,7 +58,7 @@ var ProgressBar = function () {
         key: "formatTime",
         value: function formatTime(time) {
             var min = parseInt(time / 60);
-            var second = time % 60;
+            var second = parseInt(time) % 60;
             if (min < 10) min = '0' + min;
             if (second < 10) second = '0' + second;
             return min + ":" + second;

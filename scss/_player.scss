@@ -42,6 +42,9 @@
   }
   .player-lyrics{
     text-align: center; line-height: 42px; flex: 1; overflow: hidden; color: $lyrics-color;
+    .active{
+      color: $header-background;
+    }
   }
   .player-footer{
     height: 154px; position: relative; padding-top: 40px;
