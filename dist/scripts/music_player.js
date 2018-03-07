@@ -11,6 +11,7 @@ var MusicPlayer = function () {
         this.$el = el;
         this.$el.addEventListener("click", this.clickEvent.bind(this));
         this.createAuto();
+        new ProgressBar(this.$el.querySelector(".progress"), 280, true);
     }
 
     _createClass(MusicPlayer, [{

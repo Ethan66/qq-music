@@ -8,6 +8,7 @@
         <item url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/no.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/node.js" />
+        <item url="file://$PROJECT_DIR$/dist/scripts/progress.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/search.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/slider.js" />
         <item url="file://$PROJECT_DIR$/dist/server.js" />
@@ -21,6 +22,7 @@
       <root url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/no.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/node.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/progress.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/search.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/slider.js" />
       <root url="file://$PROJECT_DIR$/dist/server.js" />
