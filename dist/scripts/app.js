@@ -62,5 +62,7 @@
         document.querySelector(".content").classList.add("hide");
         document.querySelector(".player-container").classList.remove("hide");
     });
+
+    new MusicPlayer(document.querySelector(".player-container"));
 })();
 //# sourceMappingURL=app.js.map

@@ -21,10 +21,23 @@
     .icon{
       width: 45px; height: 45px; border: 1px solid rgba(255,255,255,.6); border-radius: 50%;
       position: absolute; right: 30px; top: 30px;
-      &:after{
+
+      i{
+        display: block; width: 40px; height: 30px;
+        background: url("../images/sprite_play.png") no-repeat;
+        background-size: cover; background-position: 18px -142px;
+        position: absolute; top: 4px;
+        &.icon-play{
+          background-position: 18px -142px;
+        }
+        &.icon-pause{
+          background-position: 18px -170px;
+        }
+      }
+     /* &:after{
         display: block; content: ''; border: 10px solid transparent; border-left: 16px solid rgba(255,255,255,.6);
         position: absolute; top: 50%; left: 50%; transform: translateY(-50%); margin-left: -5px;
-      }
+      }*/
     }
   }
   .player-lyrics{

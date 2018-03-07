@@ -318,17 +318,24 @@ a {
       border-radius: 50%;
       position: absolute;
       right: 30px;
-      top: 30px; }
-      .player-container .player-header .icon:after {
+      top: 30px;
+      /* &:after{
+         display: block; content: ''; border: 10px solid transparent; border-left: 16px solid rgba(255,255,255,.6);
+         position: absolute; top: 50%; left: 50%; transform: translateY(-50%); margin-left: -5px;
+       }*/ }
+      .player-container .player-header .icon i {
         display: block;
-        content: '';
-        border: 10px solid transparent;
-        border-left: 16px solid rgba(255, 255, 255, 0.6);
+        width: 40px;
+        height: 30px;
+        background: url("../images/sprite_play.png") no-repeat;
+        background-size: cover;
+        background-position: 18px -142px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%);
-        margin-left: -5px; }
+        top: 4px; }
+        .player-container .player-header .icon i.icon-play {
+          background-position: 18px -142px; }
+        .player-container .player-header .icon i.icon-pause {
+          background-position: 18px -170px; }
   .player-container .player-lyrics {
     text-align: center;
     line-height: 42px;

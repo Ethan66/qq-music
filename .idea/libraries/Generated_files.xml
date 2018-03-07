@@ -4,6 +4,7 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/dist/scripts/app.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
+        <item url="file://$PROJECT_DIR$/dist/scripts/music_player.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/no.js" />
         <item url="file://$PROJECT_DIR$/dist/scripts/node.js" />
@@ -16,6 +17,7 @@
       <root url="file://$PROJECT_DIR$/dist/scripts/test.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/app.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/lazyload.js" />
+      <root url="file://$PROJECT_DIR$/dist/scripts/music_player.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/navbar.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/no.js" />
       <root url="file://$PROJECT_DIR$/dist/scripts/node.js" />

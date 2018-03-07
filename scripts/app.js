@@ -96,4 +96,5 @@
         document.querySelector(".player-container").classList.remove("hide")
     })
 
+    new MusicPlayer(document.querySelector(".player-container"))
 })()
